@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+</head>
+<body >
+    <div class="main-content">
+        <div class="logo-div">
+            <img class="logo-img" src="assets/Logo.png">
+        </div>
+        <div>
+            <div class="form-main-div">
+                <div class="heading-div-1">
+                    REGISTRATION
+                </div>
+                <div class="step-div">
+                    <span class="step-01" id="step-01">STEP 01</span>
+                    <span class="step-02" id="step-02">STEP 02</span>
+                </div>
+                <form action="" class="form-div" id="form" method="post">
+                        <div class="step-1" id="step1">
+
+                            <div class="name-div">
+                                <div class="fname-main">
+                                    <div class="fname-div">
+                                        <input class="fname-input" type="text" name="fname" id="fname" placeholder=" " autocomplete="off">
+                                        <label class="fname-label" for="fname">First Name</label>
+                                    </div>
+                                    <div class="signup-error">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="lname-div">       
+                                        <input class="lname-input" type="text" name="lname" id="lname" placeholder=" " autocomplete="off">
+                                        <label class="lname-label" for="lname">Last Name</label>
+                                    </div>
+                                    <div class="signup-error">
+                                        <span class="error" style="padding-left: 20px;"></span>
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="email-div-main">
+                                <div class="email-div">
+                                    <img class="email-img" src="assets/email.png" alt="">
+                                    <input class="email-input" type="text" id="email"  placeholder=" ">
+                                    <label class="email-label" for="email">Email</label>
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+
+                            <div class="mobile-div-main">
+                                <div class="mobile-div">
+                                    <input class="mobile-input" type="tel" name="phone" id="phone" placeholder="Mobile Number" maxlength="10">
+                                    <!-- <label class="mobile-label" for="phone1">Mobile Number</label> --> 
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+
+                            <div class="heading-div-2">
+                                Create Password
+                            </div>
+                            <div class="pass-content">
+                                Password must contain one special character, one capital letter and be at least 6 characters long.
+                            </div>
+                            <div class="pass-main-div">
+                                <div class="password-div">
+                                    <input class="password-input" type="password" placeholder=" " id="pass" maxlength="16" minlength="6">
+                                    <label class="password-label"for="pass">Password </label>
+                                    <img id="eye-img" onclick="showPass()" src="assets/eye.png">
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="pass-main-div">
+                                <div class="password-div">
+                                    <input class="password-input" type="password" placeholder=" " id="conPass" maxlength="16" minlength="6"> 
+                                    <label class="password-label"for="conPass">Confirm Password</label>
+                                    <img id="eye-img-1" onclick="showPass1()" src="assets/eye.png">
+                                    
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+
+                            <div class="button-div">
+                                <button class="button-div-1" type="button" onclick="nextPage() "> Next Step &#8594; </button>
+                            </div>
+                            <div class="content-div">
+                                <div class="content-div-2">
+                                Do have an account?
+                                </div>
+                                <div class="">
+                                    <button  onclick="location.href = 'login.html';" type="button"  class="button-div-2">LOGIN</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-2" id="step2">
+                            <div class="school-div-main">
+                                <div class="school-div">
+                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="sname">School / University / Institute Name*</label>
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="school-div-main">
+                                <div class="school-div">
+                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="sname">State*</label>
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="school-div-main">
+                                <div class="school-div">
+                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="sname">City*</label>
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="school-div-main">
+                                <div class="school-div">
+                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="sname">Country*</label>
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="school-div-main">
+                                <div class="school-div">
+                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="sname">Zip Code*</label>
+                                </div>
+                                <div class="signup-error">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="agree-class">
+                                <span> <input type="radio"></span>
+                                <span class="text-class">I agree to the<strong class="text-highlight">Terms of service </strong> and <strong class="text-highlight">Privacy Policy.</strong></span>
+                            </div>
+
+                            <div class="create-account-div">
+                                <div onclick="stepBack()">
+                                    <button class="button-div-stepBack" type="button" onclick="stepBack() "><Strong>←</Strong>Step Back</button>
+                                </div>
+                    
+                                <div class="button-div-12">
+                                    <button class="button-input-1" type="button" onclick="nextPage() "> Create Account</button>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                </form>
+                
+            </div>
+            <div class="bottom-text">
+                © 2022 All rights reserved | Built for Chronicle Cloud.<br> <strong>Powered with Synapse Xtreme Engine (SXE).</strong>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="signup.js"></script>
+</html>

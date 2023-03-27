@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body >
+  <div class="main-content">
+    <div class="logo">
+      <img id="logo-img" src="assets/Logo.png" alt="Chronical cloud Logo">
+    </div>
+
+    <div class="form-box">
+      <div class="login-box-p">
+        <form action="dashboard.html" class="login-box" id="form" method="post">
+          <div class="login-heading">
+            LOGIN
+          </div>
+          <div class="login-content-1">
+            Enter your email address and password to get access your account.
+          </div>
+          <div class="email-main-div" >
+            <div class="input-main">
+            <img class="email-img" src="assets/email.png" alt="">
+            <input class="input-div " type="text" name="email"  id="email"  placeholder=" ">
+            <label class="email-label" for="email">Email</label>
+            </div>
+        
+            <div class="login-error">
+              <span class="error"></span>
+            </div>
+          </div>
+        
+        <div class="pass-main">
+          <div class="password-div" >
+            <img id="password-img" src="assets/padlock.png">
+            <input  class="password-input" type="password" name="pass" id="password" placeholder=" ">
+            <label class="password-label" for="password">Password</label>
+            <img id="eye-img" onclick="showPass()" src="assets/eye.png">
+            
+          </div>
+          <div class="login-error">
+            <span class="error"></span>
+          </div>
+        </div>  
+          
+            <div class="rem-parent">
+              <div class="rem-child-1">
+                <input type="radio" name="remember-me" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+              </div>
+            <a class="rem-child-2" href="forgot.html">Forgot Password?</a>
+            </div>
+          <div class="login-button-p">
+            <button type="submit" class="login-button-c">LOGIN</button>
+          </div>
+          <div class="registration-p">
+            <div class="registration-c1">
+              Don't have an account?
+            </div>
+            <div class="registration-c2">
+              <button onclick="location.href = 'signup.html';" type="button" class="regstration-button-c">REGISTER NOW</button>
+            </div>
+          </div>
+        </form>  
+      </div>
+      <div class="bottomtext">
+        © 2022 All rights reserved | Built for Chronicle Cloud.
+        <br><strong>Powered with Synapse Xtreme Engine (SXE)</strong>
+      </div>
+    </div>
+    
+
+
+
+  </div>
+   <script src="login.js"></script>
+</body>
+</html>
