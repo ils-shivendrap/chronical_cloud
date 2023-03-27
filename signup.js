@@ -24,6 +24,12 @@ let fname=id("fname"),
     conPass=id("conPass"),
     form=id("form"),
     errorMsg=classes("error");
+    sname=id('sname');
+    state=id('state');
+    city=id('city');
+    country=id('country');
+    zipcode=id('zipcode');
+    service=id('service-accept');
 
     
 
@@ -100,42 +106,41 @@ let fname=id("fname"),
       
      
 
-      // if(pass.value=" ")
-      // {
-      //   errorMsg[4].innerHTML="* Enter Password";
-      //   pass.style.borderBottom="1px solid #ff0000";
+      if(pass.value=="")
+      {
+        errorMsg[4].innerHTML="* Enter Password";
+        pass.style.borderBottom="1px solid #ff0000";
 
-      // }
-      // else if((pass.value.match(passw))){
-      //   // errorMsg[4].innerHTML="* Enter correct Password";
-      //   // pass.style.borderBottom="1px solid #ff0000";
-      //   errorMsg[4].innerHTML=" ";
-      //   pass.style.borderBottom="1px solid #DDDDDD";
-      //    flag+=1;
-
-      // }
-
-      // else{
-      //   errorMsg[4].innerHTML="* Enter correct Password";
-      //   pass.style.borderBottom="1px solid #ff0000";
-
-      // }
-
-      // if(conPass.value=pass.value)
-      // {
-      //   errorMsg[5].innerHTML=" ";
-      //   conPass.style.borderBottom="1px solid #DDDDDD";
-      //   flag+=1;
-      //   }
-
-      // else
-      // {
-      //   errorMsg[5].innerHTML="*Password Did't Matched.";
-      //   conPass.style.borderBottom="1px solid #ff0000";
+      }
+      else if((pass.value.match(passw))){
         
-      // }
+        errorMsg[4].innerHTML=" ";
+        pass.style.borderBottom="1px solid #DDDDDD";
+         flag+=1;
 
-      if(flag==4)
+      }
+
+      else{
+        errorMsg[4].innerHTML="* Enter correct Password";
+        pass.style.borderBottom="1px solid #ff0000";
+
+      }
+
+      if(conPass.value==pass.value)
+      {
+        errorMsg[5].innerHTML=" ";
+        conPass.style.borderBottom="1px solid #DDDDDD";
+        flag+=1;
+        }
+
+      else
+      {
+        errorMsg[5].innerHTML="*Password Did't Matched.";
+        conPass.style.borderBottom="1px solid #ff0000";
+        
+      }
+      var flag=0;
+      if(flag==0)
       {
         document.getElementById("step1").style.display='none';
         document.getElementById("step2").style.display='block';
@@ -174,6 +179,95 @@ let fname=id("fname"),
   
       }
 
+      function step2(){
+        var flag=0;
+        
+        if(sname.value==""){
+          console.log('dasdsadasd')
+          errorMsg[6].innerHTML="* Enter School name.";
+          sname.style.borderBottom="1px solid #ff0000";
+        }
+        else
+        {
+          
+          errorMsg[6].innerHTML=" ";
+         sname.style.borderBottom="1px solid #DDDDDD";
+        flag+=1;
+        }
+
+        if(state.value==""){
+          console.log('dasdsadasd')
+          errorMsg[7].innerHTML="* Enter state.";
+          state.style.borderBottom="1px solid #ff0000";
+        }
+        else
+        {
+          
+          errorMsg[7].innerHTML=" ";
+         state.style.borderBottom="1px solid #DDDDDD";
+        flag+=1;
+        }
+
+        if(city.value==""){
+          errorMsg[8].innerHTML="* Enter City name.";
+          city.style.borderBottom="1px solid #ff0000";
+        }
+        else
+        {
+          
+          errorMsg[8].innerHTML=" ";
+         city.style.borderBottom="1px solid #DDDDDD";
+        flag+=1;
+        }
+
+
+        if(country.value==""){
+          errorMsg[9].innerHTML="* Enter country name.";
+          country.style.borderBottom="1px solid #ff0000";
+        }
+        else
+        {
+          
+          errorMsg[9].innerHTML=" ";
+         country.style.borderBottom="1px solid #DDDDDD";
+        flag+=1;
+        }
+
+        if(zipcode.value==""){
+          errorMsg[10].innerHTML="* Enter zipcode.";
+          zipcode.style.borderBottom="1px solid #ff0000";
+        }
+        else
+        {
+          
+          errorMsg[10].innerHTML=" ";
+         zipcode.style.borderBottom="1px solid #DDDDDD";
+        flag+=1;
+        }
+        if(service.checked==false){
+          errorMsg[11].innerHTML="* accept terms and conditions.";
+          // service.style.borderBottom="1px solid #ff0000";
+        }
+        else
+        {
+          
+          errorMsg[11].innerHTML=" ";
+        //  service.style.borderBottom="1px solid #DDDDDD";
+        flag+=1;
+        }
+        
+
+        
+
+      if(flag==6)
+      {
+        location.href='dashboard.html';
+      }
+
+
+
+      }
+
 
 
 
@@ -183,6 +277,9 @@ let fname=id("fname"),
         document.getElementById("step-01").style.opacity='1';
         document.getElementById("step-02").style.opacity='.5';
       }
+
+
+
 
 
       

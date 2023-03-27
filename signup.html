@@ -79,7 +79,7 @@
                             <div class="pass-main-div">
                                 <div class="password-div">
                                     <input class="password-input" type="password" placeholder=" " id="pass" maxlength="16" minlength="6">
-                                    <label class="password-label"for="pass">Password </label>
+                                    <label class="password-label" for="pass">Password </label>
                                     <img id="eye-img" onclick="showPass()" src="assets/eye.png">
                                 </div>
                                 <div class="signup-error">
@@ -122,8 +122,8 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
-                                    <label class="school-label" for="sname">State*</label>
+                                    <input class="school-input" type="text" name="sname" id="state" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="state">State*</label>
                                 </div>
                                 <div class="signup-error">
                                     <span class="error"></span>
@@ -131,8 +131,8 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
-                                    <label class="school-label" for="sname">City*</label>
+                                    <input class="school-input" type="text" name="sname" id="city" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="city">City*</label>
                                 </div>
                                 <div class="signup-error">
                                     <span class="error"></span>
@@ -140,8 +140,8 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
-                                    <label class="school-label" for="sname">Country*</label>
+                                    <input class="school-input" type="text" name="sname" id="country" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="country">Country*</label>
                                 </div>
                                 <div class="signup-error">
                                     <span class="error"></span>
@@ -149,18 +149,23 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
-                                    <label class="school-label" for="sname">Zip Code*</label>
+                                    <input class="school-input" type="text" name="sname" id="zipcode" placeholder=" " autocomplete="off">
+                                    <label class="school-label" for="zipcode">Zip Code*</label>
                                 </div>
                                 <div class="signup-error">
                                     <span class="error"></span>
                                 </div>
                             </div>
                             
-                            <div class="agree-class">
-                                <span> <input type="radio"></span>
-                                <span class="text-class">I agree to the<strong class="text-highlight">Terms of service </strong> and <strong class="text-highlight">Privacy Policy.</strong></span>
-                            </div>
+                            <div class="">
+                                <div class="agree-class">
+                                    <span> <input type="radio" id="service-accept"></span>
+                                    <span class="text-class">I agree to the<strong class="text-highlight">Terms of service </strong> and <strong class="text-highlight">Privacy Policy.</strong></span>
+                                </div>
+                                <div class="signup-error" style=" margin: 0px  20px;">
+                                    <span class="error"></span>
+                                </div>
+                             </div>
 
                             <div class="create-account-div">
                                 <div onclick="stepBack()">
@@ -168,7 +173,7 @@
                                 </div>
                     
                                 <div class="button-div-12">
-                                    <button class="button-input-1" type="button" onclick="nextPage() "> Create Account</button>
+                                    <button class="button-input-1" type="button" onclick="step2() "> Create Account</button>
                                 </div>
                             </div>
 
