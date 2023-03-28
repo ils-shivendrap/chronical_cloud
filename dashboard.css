@@ -297,7 +297,7 @@ body{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 6px #0000001A;
     border-radius: 10px 10px 0px 0px;
-    height: 200px;
+    /* height: 200px; */
     margin-top: 50px;
 }
 
@@ -323,7 +323,11 @@ body{
 }
 
 .table-data-css{
-    height: 70px;
+    height: 80px;
     font-size: 13px;
     color: #000000;
+}
+
+.view-color{
+    color: #487FCC;
 }
