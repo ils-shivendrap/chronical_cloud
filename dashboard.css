@@ -315,3 +315,15 @@ body{
     color: #7E84A3;
     font-size: 12px;
 }
+
+
+.css-for-img{
+    width: 70px;
+    height: 40px;
+}
+
+.table-data-css{
+    height: 70px;
+    font-size: 13px;
+    color: #000000;
+}
