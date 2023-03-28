@@ -6,116 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/9f3415099a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <div class="top-nav-bar">
-            <!-- <span class="top-item-1">Dashboard</span>     -->
+    <div class="main">
+        <div class="blue-top-bar">
 
         </div>
-        
-
-
-
-
-
-        <div class="side-nav-bar">
-
-            <div class="side-nav-item-1">
-                <img id="logo" src="assets\chronical logo.png" alt="">
+        <div class="container-main">
+            <div class="side-nav">
+                <div class="side-nav-bar">
+                    <div class="side-nav-item-1">
+                        <img id="logo" src="assets\chronical logo.png" alt="">
+                    </div>
+                    <div class="side-nav-item-2 side-nav-item">
+                        <span class="material-symbols-outlined">
+                            grid_view
+                            </span>
+                        <span>
+                            Dashboard
+                        </span>
+                    </div>
+                    <div class="side-nav-item-3 side-nav-item">    
+                        <span class="material-symbols-outlined">
+                            home
+                            </span>
+                    <span> Manage Schools </span>
+                    </div>
+    
+                    <div class="side-nav-item-4 side-nav-item">    
+                        <span class="material-symbols-outlined">
+                            person
+                            </span>
+                        <span> Manage Teacher </span>
+                    </div>
+                    <div class="side-nav-item-5 side-nav-item"> 
+                        <span class="material-symbols-outlined">
+                            account_circle
+                            </span>   
+                        <Span> Manage Roster</Span>    
+                    </div>
+    
+                    <div class="side-nav-item-6 side-nav-item">    
+                        Manage Classes    
+                    </div>
+                </div>
             </div>
-            <div class="side-nav-item-2 side-nav-item">
-                <span class="material-symbols-outlined">
-                    grid_view
-                    </span>
-                <span>
-                    Dashboard
-                </span>
-            </div>
-            <div class="side-nav-item-3 side-nav-item">    
-                <span class="material-symbols-outlined">
-                    home
-                    </span>
-               <span> Manage Schools </span>
-            </div>
+            <div class="main-content">
+                <div class="top-nav-bar">
+                    <span class="dashboard-heading">Dashboard</span>
+                    
+                   <div class=" left-nav-content">
+                        <span class="add-school"> <strong>+</strong> ADD NEW SCHOOL</span>
+                        <div class="bell-div">
+                            <span> <i class="fa-regular fa-bell"></i></span>
+                            <span> 1</span>
+                        </div>
+                        <div class="profile-div">
+                            <div class="profile-text-img">
+                                <span class="profile-img-span" ><img class="profile-img" src="assets/profile_img.jpg" alt=""></span>
+                                <span class="user-name">Vincent Williams</span>
+                            </div>
+                            <span><i class="fa-solid fa-chevron-down "></i></span>
+                        </div>
+                   </div>
+                </div>
+                <div  class="cards-main">
+                    <div class="small-box">
+                        <div class="small-box-1 small-box-css">
+                            <span class="small-box-heading"> SCHOOL COUNT</span>
+                            <div class="small-box-middle">
+                                <span class="small-box-middle-1" >04 <sub style="font-size: 14px;
+                                    font-weight: 100;">Active</sub> </span>
+                                <span class="small-box-middle-2"><i class="fa-solid fa-school-flag"></i></span>
+                            </div>
+                            <span class="small-box-footor">Total Schools: 12</span>
+                        </div>
+                        
+                        <div class="small-box-2 small-box-css">
+                            <span class="small-box-heading">TEACHER COUNT</span>
+                            <div class="small-box-middle">
+                                <span class="small-box-middle-1" >84 <sub style="font-size: 14px;
+                                    font-weight: 100;">Active</sub> </span>
+                                <span class="small-box-middle-2 " id="bg-color"><i class="fa-solid fa-user-tie"></i></span>
+                            </div>
+                            <span class="small-box-footor">Total Teachers: 98</span>
 
-            <div class="side-nav-item-4 side-nav-item">    
-                <span class="material-symbols-outlined">
-                    person
-                    </span>
-                <span> Manage Teacher </span>
+                        </div>
+                        
+                        <div class="small-box-3 small-box-css">
+                            <span class="small-box-heading"> ROSTER COUNT</span>
+                            <div class="small-box-middle">
+                                <span class="small-box-middle-1" >1256 <sub style="font-size: 14px;
+                                    font-weight: 100;">Active</sub> </span>
+                                <span class="small-box-middle-2" id="bg-color-2"><i class="fa-solid fa-users"></i></span>
+                            </div>
+                            <span class="small-box-footor">Total Roster: 1307</span>
+
+                        </div>
+                        
+                        <div class="small-box-4 small-box-css">
+                            <span class="small-box-heading"> CLASSES COUNT</span>
+                            <div class="small-box-middle">
+                                <span class="small-box-middle-1" >76 <sub style="font-size: 14px;
+                                    font-weight: 100;">Active</sub> </span>
+                                <span class="small-box-middle-2" id="bg-color-3"><i class="fa-solid fa-user-check"></i></span>
+                            </div>
+                            <span class="small-box-footor">Total Schools: 12</span>
+
+                        </div>
+
+                    </div>
+                    <div class="large-box">
+                        <div class="large-box-1" >
+                            <canvas id="barChart"> </canvas>
+
+                        </div>
+                        <div class="large-box-2">
+                            <canvas id="pieChart"> </canvas>
+                        </div>
+                    </div>
+                    <div class="table-div">
+                        <table class="table">
+                            <span id="top-heading">School List</span>
+                            <thead>
+                              <tr class="table-heading">
+                                <th scope="col">LOGO</th>
+                                <th scope="col">SCHOOL NAME</th>
+                                <th scope="col"> SCHOOL CONTACT</th>
+                                <th scope="col">SCHOOL SIZE </th>
+                                <th scope="col">DATA USAGE</th>
+                                <th scope="col">STATUS</th>
+                                <th scope="col">ACTION</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="" alt=""></th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        
+                    </div>
+                
+                </div>
+
+                
             </div>
-            <div class="side-nav-item-5 side-nav-item"> 
-                <span class="material-symbols-outlined">
-                    account_circle
-                    </span>   
-                <Span> Manage Roster</Span>    
-            </div>
-
-            <div class="side-nav-item-6 side-nav-item">    
-                Manage Classes    
-            </div>
-
-
-
-        </div>
-        
-        <div class="row-2-card-1 row-2-card">
-            <div>
-                SCHOOL COUNT
-            </div>
-            <div>
-                04 Active
-                <span class="material-symbols-outlined">
-                    home
-                    </span>                
-
-            </div>
-            <div>
-
-            </div>
-
-        </div>
-        <div class="row-2-card-2 row-2-card">
             
-
         </div>
-        <div class="row-2-card-3 row-2-card">
-            
-
-        </div>
-        <div class="row-2-card-4 row-2-card">
-            
-
-        </div>
-
-        <div class="row-3-card-1 row-3-card">
-            
-
-        </div>
-        <div class="row-3-card-2 row-3-card">
-            
-
-        </div>
-
-        <div class="row-4-card ">
-            
-        </div>
-           
-
-
-
-        
     </div>
 
 
 
 
-
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="dashboard.js"></script>
 </body>
 </html>
