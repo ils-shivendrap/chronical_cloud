@@ -139,8 +139,8 @@ let fname=id("fname"),
         conPass.style.borderBottom="1px solid #ff0000";
         
       }
-      var flag=0;
-      if(flag==0)
+      // var flag=0;
+      if(flag==6)
       {
         document.getElementById("step1").style.display='none';
         document.getElementById("step2").style.display='block';
