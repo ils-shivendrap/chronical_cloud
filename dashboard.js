@@ -1,24 +1,5 @@
 const barChart = document.getElementById('barChart');
 
-  // new Chart(barChart, {
-  //   type: 'bar',
-  //   data: {
-  //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-  //     datasets: [{
-  //       label: '# of Votes',
-  //       data: [12, 19, 3, 5, 2, 3],
-  //       borderWidth: 1
-  //     }]
-  //   },
-  //   options: {
-  //     scales: {
-  //       y: {
-  //         beginAtZero: true
-  //       }
-  //     }
-  //   }
-  // });
-
 //Bar graph JS
 var xValues = ["School_Name_01", "School_Name_02", "School_Name_03", "School_Name_04"];
   
@@ -122,6 +103,7 @@ new Chart("pieChart", {
         },
         position:"outside",
         fontColor: barColors
+
       },
       datalabels:{
         formatter: (value, ctx) => {
@@ -171,16 +153,61 @@ new Chart("pieChart", {
 
 
 
+let link = document.getElementsByClassName("side-box-items");
+
+for (let i = 0; i < link.length; i++) {
+  link[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 
 
 
 
+//open sidebar menu
+let sideBarOpen = document.getElementById("bars");
+sideBarOpen.addEventListener("click", ()=>{
+ 
+    let nav = document.getElementsByClassName("side-nav-main-div")[0];
+    if (sideBarOpen.getAttribute("aria-expanded") === "false"){
+      console.log("saaasa")
+        nav.style.left = 0;
+        sideBarOpen.setAttribute("aria-expanded", "true")
+    }
+  
+})
 
 
+let sideBarClose = document.getElementById("close-btn");
+sideBarClose.addEventListener("click", ()=>{
+ 
+    let nav = document.getElementsByClassName("side-nav-main-div")[0];
+    if (sideBarOpen.getAttribute("aria-expanded") === "true"){
+      console.log("saaasa")
+        nav.style.left = "-260px";
+        sideBarOpen.setAttribute("aria-expanded", "false")
+    }
+  
+})
 
+let dropdown = document.getElementById("dropdownBtn");
+dropdown.addEventListener("click", ()=>{
+ 
+    let drop = document.getElementsByClassName("user-dropdown")[0];
+    if (dropdown.getAttribute("aria-expanded") === "true"){
+      console.log("saaasa")
+        drop.style.display = "none";
+        dropdown.setAttribute("aria-expanded", "false")
+    }
+    else{
+      drop.style.display = "block";
+      dropdown.setAttribute("aria-expanded", "true")
 
-
-
+    }
+  
+})
 
 
 

@@ -31,7 +31,7 @@
                             <div class="name-div">
                                 <div class="fname-main">
                                     <div class="fname-div">
-                                        <input class="fname-input" type="text" name="fname" id="fname" placeholder=" " autocomplete="off">
+                                        <input class="fname-input" type="text" name="fname" id="fname" placeholder=" " autocomplete="off" onchange="nextPage()">
                                         <label class="fname-label" for="fname">First Name</label>
                                     </div>
                                     <div class="signup-error">
@@ -40,7 +40,7 @@
                                 </div>
                                 <div>
                                     <div class="lname-div">       
-                                        <input class="lname-input" type="text" name="lname" id="lname" placeholder=" " autocomplete="off">
+                                        <input class="lname-input" type="text" name="lname" id="lname" placeholder=" " autocomplete="off" onchange="nextPage()">
                                         <label class="lname-label" for="lname">Last Name</label>
                                     </div>
                                     <div class="signup-error">
@@ -52,7 +52,7 @@
                             <div class="email-div-main">
                                 <div class="email-div">
                                     <img class="email-img" src="assets/email.png" alt="">
-                                    <input class="email-input" type="text" id="email"  placeholder=" ">
+                                    <input class="email-input" type="text" id="email"  placeholder=" "  onchange="nextPage()">
                                     <label class="email-label" for="email">Email</label>
                                 </div>
                                 <div class="signup-error">
@@ -62,7 +62,7 @@
 
                             <div class="mobile-div-main">
                                 <div class="mobile-div">
-                                    <input class="mobile-input" type="tel" name="phone" id="phone" placeholder="Mobile Number" maxlength="10">
+                                    <input class="mobile-input" type="tel" name="phone" id="phone" placeholder="Mobile Number" maxlength="10" onchange="nextPage()">
                                     <!-- <label class="mobile-label" for="phone1">Mobile Number</label> --> 
                                 </div>
                                 <div class="signup-error">
@@ -78,7 +78,7 @@
                             </div>
                             <div class="pass-main-div">
                                 <div class="password-div">
-                                    <input class="password-input" type="password" placeholder=" " id="pass" maxlength="16" minlength="6">
+                                    <input class="password-input" type="password" placeholder=" " id="pass" maxlength="16" minlength="6" onchange="nextPage()">
                                     <label class="password-label" for="pass">Password </label>
                                     <img id="eye-img" onclick="showPass()" src="assets/eye.png">
                                 </div>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="pass-main-div">
                                 <div class="password-div">
-                                    <input class="password-input" type="password" placeholder=" " id="conPass" maxlength="16" minlength="6"> 
+                                    <input class="password-input" type="password" placeholder=" " id="conPass" maxlength="16" minlength="6" onchange="nextPage()"> 
                                     <label class="password-label"for="conPass">Confirm Password</label>
                                     <img id="eye-img-1" onclick="showPass1()" src="assets/eye.png">
                                     
@@ -105,15 +105,15 @@
                                 <div class="content-div-2">
                                 Do have an account?
                                 </div>
-                                <div class="">
-                                    <button  onclick="location.href = 'login.html';" type="button"  class="button-div-2">LOGIN</button>
+                                <div style="width:35%">
+                                    <button  onclick="location.href = 'login.html';" type="button"  class="button-div-2" >LOGIN</button>
                                 </div>
                             </div>
                         </div>
                         <div class="step-2" id="step2">
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off">
+                                    <input class="school-input" type="text" name="sname" id="sname" placeholder=" " autocomplete="off" onchange="step2()">
                                     <label class="school-label" for="sname">School / University / Institute Name*</label>
                                 </div>
                                 <div class="signup-error">
@@ -122,7 +122,7 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="state" placeholder=" " autocomplete="off">
+                                    <input class="school-input" type="text" name="sname" id="state" placeholder=" " autocomplete="off" onchange="step2()">
                                     <label class="school-label" for="state">State*</label>
                                 </div>
                                 <div class="signup-error">
@@ -131,7 +131,7 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="city" placeholder=" " autocomplete="off">
+                                    <input class="school-input" type="text" name="sname" id="city" placeholder=" " autocomplete="off" onchange="step2()">
                                     <label class="school-label" for="city">City*</label>
                                 </div>
                                 <div class="signup-error">
@@ -140,7 +140,7 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="country" placeholder=" " autocomplete="off">
+                                    <input class="school-input" type="text" name="sname" id="country" placeholder=" " autocomplete="off" onchange="step2()">
                                     <label class="school-label" for="country">Country*</label>
                                 </div>
                                 <div class="signup-error">
@@ -149,7 +149,7 @@
                             </div>
                             <div class="school-div-main">
                                 <div class="school-div">
-                                    <input class="school-input" type="text" name="sname" id="zipcode" placeholder=" " autocomplete="off">
+                                    <input class="school-input" type="number" name="sname" id="zipcode" placeholder=" " autocomplete="off" maxlength="7" onchange="step2()" >
                                     <label class="school-label" for="zipcode">Zip Code*</label>
                                 </div>
                                 <div class="signup-error">
@@ -159,8 +159,13 @@
                             
                             <div class="">
                                 <div class="agree-class">
-                                    <span> <input type="radio" id="service-accept"></span>
-                                    <span class="text-class">I agree to the<strong class="text-highlight">Terms of service </strong> and <strong class="text-highlight">Privacy Policy.</strong></span>
+                                    <div class="rem-child-1">
+                                        <input type="checkbox" class="checkbox-round" name="remember-me" id="remember-me">
+                                        <label for="remember-me" class="text-class">I agree to the<strong class="text-highlight">Terms of service </strong> and <strong class="text-highlight">Privacy Policy.</strong></label>
+                                        <i class="fa-solid fa-check green-check-box" ></i>
+                                      
+                                    <!-- <span class="text-class">I agree to the<strong class="text-highlight">Terms of service </strong> and <strong class="text-highlight">Privacy Policy.</strong></span> -->
+                                </div>
                                 </div>
                                 <div class="signup-error" style=" margin: 0px  20px;">
                                     <span class="error"></span>
@@ -169,7 +174,7 @@
 
                             <div class="create-account-div">
                                 <div onclick="stepBack()">
-                                    <button class="button-div-stepBack" type="button" onclick="stepBack() "><Strong>←</Strong>Step Back</button>
+                                    <button class="button-div-stepBack" type="button" onclick="stepBack() "><Strong>←</Strong> &nbsp;Step Back</button>
                                 </div>
                     
                                 <div class="button-div-12">

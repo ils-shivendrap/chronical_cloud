@@ -13,7 +13,7 @@
             <img class="logo" src="assets/Logo.png" alt="">
         </div>
         <div class="form-box">
-            <form class="form-div" action="" id="form" method="post" onsubmit="">
+            <form class="form-div" action="testing.html" id="form" method="post" onsubmit="">
                <div class="heading-div">
                     FORGOT PASSWORD
                 </div>
@@ -23,7 +23,7 @@
                 <div class="email-main-div">
                     <div class="input-main">
                         <img class="email-img" src="assets/email.png" alt="">
-                        <input class="input-div " type="text" id="email"  placeholder=" ">
+                        <input class="input-div " type="text" id="email"  placeholder=" " onchange="changePass()">
                         <label class="email-label" for="email">Email</label>
                     </div>
                     <div class="error-div">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="button-div-main">
-                    <button class="button-div" type="submit"> RETRIVE PASSWORD</button>
+                    <button class="button-div" type="submit" id="submit-button" disabled> RETRIVE PASSWORD</button>
                 </div>
 
             </form>

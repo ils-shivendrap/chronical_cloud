@@ -13,65 +13,85 @@
 <body>
     <div class="main">
         <div class="blue-top-bar">
-
         </div>
         <div class="container-main">
-            <div class="side-nav">
-                <div class="side-nav-bar">
-                    <div class="side-nav-item-1">
-                        <img id="logo" src="assets\chronical logo.png" alt="">
+            <div class="side-nav-main-div " >
+                <div class="side-nav-c1">
+                    <div id="close-btn" class=" d-lg-none text-end pe-3 pt-3"><i class="fa-solid fa-xmark"></i></div>
+                    <div class=" logo text-center pt-lg-4 px-xl-4">
+                        <img width="80%" class="py-2" src="./assets/chronical logo.png" alt="">
+                        
+                        <hr>
                     </div>
-                    <div class="side-nav-item-2 side-nav-item">
-                        <span class="material-symbols-outlined">
-                            grid_view
-                            </span>
-                        <span>
-                            Dashboard
-                        </span>
-                    </div>
-                    <div class="side-nav-item-3 side-nav-item">    
-                        <span class="material-symbols-outlined">
-                            home
-                            </span>
-                    <span> Manage Schools </span>
-                    </div>
-    
-                    <div class="side-nav-item-4 side-nav-item">    
-                        <span class="material-symbols-outlined">
-                            person
-                            </span>
-                        <span> Manage Teacher </span>
-                    </div>
-                    <div class="side-nav-item-5 side-nav-item"> 
-                        <span class="material-symbols-outlined">
-                            account_circle
-                            </span>   
-                        <Span> Manage Roster</Span>    
-                    </div>
-    
-                    <div class="side-nav-item-6 side-nav-item">    
-                        Manage Classes    
+                    <div>
+                        <div class="side-box-items active">
+                            <a href="dashboard.html" class="side-nav-css"> 
+                                <span class="side-nav-icons"><i class="fa-solid fa-grip"></i></span> 
+                                <span>Dashboard</span>
+                            </a>
+                        </div>
+                        <div class="side-box-items">
+                            <a href="#" class="side-nav-css"> 
+                                <span class="side-nav-icons"><i class="fa-solid fa-school"></i></span> 
+                                <span>Manage Schools</span>
+                            </a> 
+                        </div>
+                        <div class="side-box-items">
+                            <a href="testing.html" class="side-nav-css"> 
+                                <span class="side-nav-icons"><i class="fa-solid fa-user-tie"></i></span> 
+                                <span>Manage Teacher</span> 
+                            </a>
+                        </div>
+                        <div class="side-box-items">
+                            <a href="testing.html" class="side-nav-css"> 
+                                <span class="side-nav-icons"><i class="fa-solid fa-user"></i></span>
+                                <span>Manage Rosters </span>
+                            </a>
+                        </div>
+                        <div class="side-box-items">
+                            <a href="testing.html" class="side-nav-css"> 
+                                <span class="side-nav-icons"><i class="fa-solid fa-clipboard-user"></i></span>
+                                <span> Manage Classes </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="main-content">
-                <div class="top-nav-bar">
-                    <span class="dashboard-heading">Dashboard</span>
-                    
-                   <div class=" left-nav-content">
-                        <span class="add-school"> <strong>+</strong> ADD NEW SCHOOL</span>
-                        <div class="bell-div">
-                            <span> <i class="fa-regular fa-bell"></i></span>
-                            <span> 1</span>
+                
+                <div  class="top-nav-main">
+                    <span  class="bars" id="bars" aria-expanded="false"><i class="fa-solid fa-bars"></i></span>                
+                    <div class="top-nav-bar">
+                        
+                        <span class="dashboard-heading">Dashboard</span>
+                        
+                        <div class=" left-nav-content">
+                                <span class="add-school"> <strong>+</strong> ADD NEW SCHOOL</span>
+                                <div class="bell-div">
+                                    <span> <i class="fa-regular fa-bell"></i></span>
+                                    <span> 1</span>
+                                </div>
+                                <div class="profile-div">
+                                    <div class="profile-div-c">
+                                        <div class="profile-text-img">
+                                            <span class="profile-img-span" ><img class="profile-img" src="assets/profile_img.jpg" alt=""></span>
+                                            <span class="user-name">Vincent Williams</span>
+                                        </div>
+                                        <span style="padding-left: 10px;" id="dropdownBtn" aria-expanded="false"><i class="fa-solid fa-chevron-down "></i></span>
+                                
+                                    
+                                    </div>
+                                   <div class="user-dropdown" id="userDropdown" >
+                                    <div class="user-dropdown-items"> <i class="fa-solid fa-user"></i> &nbsp;&nbsp;<a href="">View Profile</a></div>
+                                    <div class="user-dropdown-items"> <i class="fa-solid fa-globe"></i>&nbsp;&nbsp;<a href="">Visit Website</a></div>
+                                    <div class="user-dropdown-items"> <i class="fa-solid fa-question"></i>&nbsp;&nbsp;<a href="">Help Center</a></div>
+                                    <div class="user-dropdown-items"> <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;<a href="">Signout</a></div>
+
+                                   </div> 
+                                </div>
                         </div>
-                        <div class="profile-div">
-                            <div class="profile-text-img">
-                                <span class="profile-img-span" ><img class="profile-img" src="assets/profile_img.jpg" alt=""></span>
-                                <span class="user-name">Vincent Williams</span>
-                            </div>
-                            <span><i class="fa-solid fa-chevron-down "></i></span>
-                        </div>
-                   </div>
+                    </div>
                 </div>
                 <div  class="cards-main">
                     <div class="small-box">
@@ -161,7 +181,7 @@
                                 <td>Goldeninternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
                                 <td>364 / 30</td>
                                 <td> <strong>
-                                    324</strong> / 500mb</td>    
+                                    324</strong><span class="table-lightfont-color"> /500mb</span></td>    
                                 <td>Active</td>
                                 <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
                               </tr>
@@ -170,7 +190,7 @@
                                 <td>Golden International School</td>
                                 <td>Goldeninternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
                                 <td>364 / 30</td>
-                                <td> <strong> 324 </strong>/ 500mb</td>
+                                <td> <strong> 324 </strong><span class="table-lightfont-color">/500mb</span></td>
                                 <td>Active</td>
                                 <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
                               </tr>
@@ -179,13 +199,13 @@
                                 <td>Golden International School</td>
                                 <td>Goldeninternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
                                 <td>364 / 30</td>
-                                <td><strong>324 </strong> / 500mb</td>
+                                <td><strong>324 </strong> <span class="table-lightfont-color">/500mb</span> </td>
                                 <td>Active</td>
                                 <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
                               </tr>
             
                             </tbody>    
-                          </table>
+                        </table>
                         
                     </div>
                 

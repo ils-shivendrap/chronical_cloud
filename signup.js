@@ -31,10 +31,7 @@ let fname=id("fname"),
     zipcode=id('zipcode');
     service=id('service-accept');
 
-    
-
-  
-    function nextPage(){
+       function nextPage(inputName){
      var flag=0;
 
       if(fname.value==""){
@@ -72,7 +69,7 @@ let fname=id("fname"),
     
         else if(email.value=="")
         {
-            errorMsg[2].innerHTML="*Enter Email.";
+            errorMsg[2].innerHTML="*Please Enter Correct Email.";
             email.style.borderBottom="1px solid #ff0000";
             
         }

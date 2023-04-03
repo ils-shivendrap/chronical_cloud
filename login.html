@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/9f3415099a.js" crossorigin="anonymous"></script>
 </head>
 
 <body >
@@ -25,9 +26,11 @@
           </div>
           <div class="email-main-div" >
             <div class="input-main">
-            <img class="email-img" src="assets/email.png" alt="">
-            <input class="input-div " type="text" name="email"  id="email"  placeholder=" ">
-            <label class="email-label" for="email">Email</label>
+              <span class="email-img-span">
+                <img class="email-img" style="width: 17px;" src="assets/email.png" alt="">
+              </span>
+              <input class="input-div " type="text" name="email"  id="email"  placeholder=" " onchange="main()">
+              <label class="email-label" for="email">Email</label>
             </div>
         
             <div class="login-error">
@@ -37,8 +40,8 @@
         
         <div class="pass-main">
           <div class="password-div" >
-            <img id="password-img" src="assets/padlock.png">
-            <input  class="password-input" type="password" name="pass" id="password" placeholder=" ">
+            <span class="email-img-span"><img id="password-img" src="assets/padlock.png"> </span>
+            <input  class="password-input" type="password" name="pass" id="password" placeholder=" " onchange="main()">
             <label class="password-label" for="password">Password</label>
             <img id="eye-img" onclick="showPass()" src="assets/eye.png">
             
@@ -50,13 +53,14 @@
           
             <div class="rem-parent">
               <div class="rem-child-1">
-                <input type="radio" name="remember-me" id="remember-me">
+                <input type="checkbox" class="checkbox-round" name="remember-me" id="remember-me">
                 <label for="remember-me">Remember Me</label>
+                <i class="fa-solid fa-check green-check-box" ></i>
               </div>
-            <a class="rem-child-2" href="forgot.html">Forgot Password?</a>
+              <a class="rem-child-2" href="forgot.html">Forgot Password?</a>
             </div>
           <div class="login-button-p">
-            <button type="submit" class="login-button-c">LOGIN</button>
+            <button type="submit" class="login-button-c" id="login-button" disabled>LOGIN</button>
           </div>
           <div class="registration-p">
             <div class="registration-c1">
