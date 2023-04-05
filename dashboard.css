@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -24,7 +26,7 @@ body{
     background: #487FCC 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 4px #15223214;
     opacity: 1;
-    height: 200px;
+    height: 170px;
     position: fixed;
     top:0;
     left: 0;
@@ -73,9 +75,11 @@ body{
 .side-nav-css{
     display: flex;
     width: 100%;
-    color: #5c5c5d;
     text-decoration: none;
-    font-weight: 600 !important;
+    font: normal normal normal 15px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #171725;
+    opacity: 1;
     padding: 8px 0px;
 
 }
@@ -87,25 +91,29 @@ body{
 
 }
 
-.side-nav-css:hover{
-    background-color: #F2F7FF;
+.side-box-items:hover{
+    background: #F2F7FF 0% 0% no-repeat padding-box;
     color: #1f1f28;
+    font: normal normal 800 15px/22px Open Sans;
+
 }
 
 .active{
     background-color: #F2F7FF;
+    font: normal normal 600 15px/22px Open Sans;
 }
 
 .active .side-nav-css span:nth-child(2){
     color: #386CB5;
+    font: normal normal 600 15px/22px Open Sans;
 }
 
-.side-nav-css.active::before{
+/* .side-nav-css.active::before{
     content: "\00a0";
     display: inline-block;
     background-color: #487FCC;
     width: 5px;
-}
+} */
 
 
 .main-content{
@@ -115,18 +123,18 @@ body{
 
 .top-nav-bar{
    
-    padding-top: 25px;
+    padding-top: 10px;
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
     align-items: center;
-    
+    padding-bottom: 15px;
     background-color: #487FCC;
 }
 
 .dashboard-heading{
     color: #FFFFFF;
-    font-size: 19px;
+    font: normal normal 600 15px/20px Open Sans;
 }
 
 
@@ -138,13 +146,15 @@ body{
 }
 
 .add-school{
+    display: flex;
+    align-items: center;
     color: #386CB5;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000026;
     border-radius: 8px;
-    font-size: 13px;
     padding: 14px;
-    font-weight: 600;
+    font: normal normal 600 11px/10px Open Sans;
+    
 }   
 
 
@@ -157,13 +167,13 @@ body{
 
 .bell-div span:nth-child(2) {
     position: absolute;
-    font-size: 11px;
+    font-size: 9px;
     background-color: red;
     color: white;
     border-radius: 50%;
-    padding: 1px 4px;
-    top: 8px;
-    right: 12px;
+    padding: 0px 4px;
+    top: 15px;
+    right: 13px;
 }
 
 
@@ -171,10 +181,10 @@ body{
 .profile-div{
     display: flex;
     align-items: center;
-    width: 200px;
+    /* width: 200px; */
     justify-content: space-evenly;
     color: white;
-    margin-right: 15px;
+    /* margin-right: 15px; */
     flex-direction: column;
     position: relative;
 
@@ -188,15 +198,15 @@ body{
 
 .profile-img{
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     
 }
 
 .user-name{
     color: white;
     padding-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
     /* margin: auto 0; */
 }
 
@@ -235,7 +245,7 @@ body{
 
 
 .cards-main{
-    padding: 35px 15px;
+    padding: 2px 20px;
 }
 
 
@@ -246,8 +256,8 @@ body{
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-right: 160px;
-
+    /* margin-right: 160px; */
+    width: 93%;
 }
 
 .small-box-css{
@@ -265,7 +275,8 @@ body{
     text-transform: uppercase;
     opacity: 0.4;
     font-weight: bold;
-    font-size: 14px;
+    /* font-size: 13px; */
+    font: normal normal 600 14px/18px open sans ;
 }
 
 .small-box-middle{
@@ -276,7 +287,7 @@ body{
 }
 
 .small-box-middle-1{
-    font: normal normal 600 30px/30px open ;
+    font: normal normal 600 30px/35px open sans;
 }
 
 .small-box-middle-2{
@@ -292,10 +303,10 @@ body{
 }
 
 .small-box-footor{
-    /* position: absolute; */
-    padding-top: 13px;
     color: #000000;
     opacity: 0.4;   
+    /* font-size: 12px; */
+    font: normal normal normal 12px/17px  open Sans;
 }
 
 /* small box 2 circle bg color */
@@ -322,9 +333,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-top: 30px;
-    margin-right: 160px;
-    /* padding: 20px; */
+    margin-top: 25px;
+    width: 93%;
     
 }
 
@@ -344,12 +354,18 @@ body{
     padding: 10px;
 }
 
+
+
+#barChart{
+    padding-top: 5px;
+}
+
 .table-div{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 6px #0000001A;
     border-radius: 10px 10px 0px 0px;
     /* height: 200px; */
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 
@@ -361,11 +377,12 @@ body{
 
 #top-heading{
     color: #444B48;
+    font: normal normal 600 15px/27px Open Sans;
 }
 
 .table-heading{
     color: #7E84A3;
-    font-size: 12px;
+    font: normal normal 600 12px/20px Open Sans;
 }
 
 
@@ -389,8 +406,9 @@ body{
 .table-lightfont-color{
     color: #000000;
     opacity: 0.4;
-    font-size: 10px;
-    font-weight: bold;
+    /* font-size: 12px; */
+    /* font-weight: bold; */
+    font: normal normal normal 12px/15px Open Sans;
 }
 
 
@@ -503,4 +521,14 @@ body{
     }
 
 
+}
+
+
+
+.subclass{
+    left: -4px;
+    bottom: 0 !important; 
+    font-size: 12px;
+     font-weight: 100;
+     font: normal normal normal 12px/19px Open Sans;
 }

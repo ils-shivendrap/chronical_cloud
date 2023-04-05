@@ -67,9 +67,12 @@
                         <span class="dashboard-heading">Dashboard</span>
                         
                         <div class=" left-nav-content">
-                                <span class="add-school"> <strong>+</strong> ADD NEW SCHOOL</span>
+                                <div class="add-school">
+                                    <span><i class="fa-solid fa-plus" style="font-size: 13px; color: #386CB5; font-weight:800;"></i> &nbsp;</span>
+                                    <span > ADD NEW SCHOOL</span>
+                                </div>      
                                 <div class="bell-div">
-                                    <span> <i class="fa-regular fa-bell"></i></span>
+                                    <span> <img  style="width: 20px;" src="assets/ic-bell.png" alt=""></span>
                                     <span> 1</span>
                                 </div>
                                 <div class="profile-div">
@@ -86,7 +89,7 @@
                                     <div class="user-dropdown-items"> <i class="fa-solid fa-user"></i> &nbsp;&nbsp;<a href="">View Profile</a></div>
                                     <div class="user-dropdown-items"> <i class="fa-solid fa-globe"></i>&nbsp;&nbsp;<a href="">Visit Website</a></div>
                                     <div class="user-dropdown-items"> <i class="fa-solid fa-question"></i>&nbsp;&nbsp;<a href="">Help Center</a></div>
-                                    <div class="user-dropdown-items"> <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;<a href="">Signout</a></div>
+                                    <div class="user-dropdown-items"> <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;<a href="lo">Signout</a></div>
 
                                    </div> 
                                 </div>
@@ -98,9 +101,8 @@
                         <div class="small-box-1 small-box-css">
                             <span class="small-box-heading"> SCHOOL COUNT</span>
                             <div class="small-box-middle">
-                                <span class="small-box-middle-1" >04 <sub style="font-size: 14px;
-                                    font-weight: 100;">Active</sub> </span>
-                                <span class="small-box-middle-2"><i class="fa-solid fa-school-flag"></i></span>
+                                <span class="small-box-middle-1" >04 <sub class="subclass">Active</sub> </span>
+                                <span class="small-box-middle-2"><img width="20px" src="assets/1.png" alt=""></span>
                             </div>
                             <span class="small-box-footor">Total Schools: 12</span>
                         </div>
@@ -108,9 +110,8 @@
                         <div class="small-box-2 small-box-css">
                             <span class="small-box-heading">TEACHER COUNT</span>
                             <div class="small-box-middle">
-                                <span class="small-box-middle-1" >84 <sub style="font-size: 14px;
-                                    font-weight: 100;">Active</sub> </span>
-                                <span class="small-box-middle-2 " id="bg-color"><i class="fa-solid fa-user-tie"></i></span>
+                                <span class="small-box-middle-1" >84 <sub class="subclass">Active</sub> </span>
+                                <span class="small-box-middle-2 " id="bg-color"><img width="18px" src="assets/2.png" alt=""></span>
                             </div>
                             <span class="small-box-footor">Total Teachers: 98</span>
 
@@ -119,9 +120,8 @@
                         <div class="small-box-3 small-box-css">
                             <span class="small-box-heading"> ROSTER COUNT</span>
                             <div class="small-box-middle">
-                                <span class="small-box-middle-1" >1256 <sub style="font-size: 14px;
-                                    font-weight: 100;">Active</sub> </span>
-                                <span class="small-box-middle-2" id="bg-color-2"><i class="fa-solid fa-users"></i></span>
+                                <span class="small-box-middle-1" >1256 <sub class="subclass">Active</sub> </span>
+                                <span class="small-box-middle-2" id="bg-color-2"><img src="assets/3.png" alt=""></span>
                             </div>
                             <span class="small-box-footor">Total Roster: 1307</span>
 
@@ -130,9 +130,8 @@
                         <div class="small-box-4 small-box-css">
                             <span class="small-box-heading"> CLASSES COUNT</span>
                             <div class="small-box-middle">
-                                <span class="small-box-middle-1" >76 <sub style="font-size: 14px;
-                                    font-weight: 100;">Active</sub> </span>
-                                <span class="small-box-middle-2" id="bg-color-3"><i class="fa-solid fa-user-check"></i></span>
+                                <span class="small-box-middle-1" >76 <sub class="subclass">Active</sub> </span>
+                                <span class="small-box-middle-2" id="bg-color-3" ><img style="width: 20px;" src="assets/4.png" alt=""></span>
                             </div>
                             <span class="small-box-footor">Total Schools: 12</span>
 
@@ -168,8 +167,8 @@
                                 <th scope="col">LOGO</th>
                                 <th scope="col">SCHOOL NAME</th>
                                 <th scope="col"> SCHOOL CONTACT</th>
-                                <th scope="col">SCHOOL SIZE </th>
-                                <th scope="col">DATA USAGE</th>
+                                <th scope="col">SCHOOL SIZE &nbsp;<i style="font: italic normal normal 10px/18px Open Sans; color: black; ">Roster / Teacher</i> </th>
+                                <th scope="col">DATA USAGE  </th>
                                 <th scope="col">STATUS</th>
                                 <th scope="col">ACTION</th>
                               </tr>
@@ -222,6 +221,8 @@
 
    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
     <script src="dashboard.js"></script>
 </body>
 </html>

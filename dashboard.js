@@ -1,3 +1,4 @@
+Chart.register(ChartDataLabels);
 const barChart = document.getElementById('barChart');
 
 //Bar graph JS
@@ -7,6 +8,7 @@ new Chart("barChart", {
   type: "bar",
   data: {
     labels: xValues,
+    
     datasets: [{
       label: "Active",
       backgroundColor: "#F9AC32",
@@ -31,10 +33,11 @@ new Chart("barChart", {
         labels: {
             usePointStyle	: true,
             pointStyle: "circle",
-            fontColor: '#333',
+            fontColor: '#444B48',
             boxWidth: 6,
             boxHeight: 6,
             borderRadius: "50",
+            
             
         },
         
@@ -185,7 +188,7 @@ sideBarClose.addEventListener("click", ()=>{
  
     let nav = document.getElementsByClassName("side-nav-main-div")[0];
     if (sideBarOpen.getAttribute("aria-expanded") === "true"){
-      console.log("saaasa")
+      // console.log("saaasa")
         nav.style.left = "-260px";
         sideBarOpen.setAttribute("aria-expanded", "false")
     }

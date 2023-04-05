@@ -57,6 +57,10 @@ function main(){
         loginButton.style.opacity="1";
         
     }
+    else{
+        document.getElementById("login-button").disabled = true;
+        loginButton.style.opacity=".5";
+    }
   
 }
 

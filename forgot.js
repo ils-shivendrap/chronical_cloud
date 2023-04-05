@@ -37,6 +37,11 @@ function changePass(){
         document.getElementById("submit-button").style.opacity="1";
         document.getElementById("submit-button").disabled=false;
     }
+
+    else{
+        document.getElementById("submit-button").style.opacity="0.5";
+        document.getElementById("submit-button").disabled=true;
+    }
 }
 
 

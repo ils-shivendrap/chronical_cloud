@@ -29,9 +29,9 @@ let fname=id("fname"),
     city=id('city');
     country=id('country');
     zipcode=id('zipcode');
-    service=id('service-accept');
+    service=id('remember-me');
 
-       function nextPage(inputName){
+    function nextPage(){
      var flag=0;
 
       if(fname.value==""){
@@ -241,15 +241,17 @@ let fname=id("fname"),
          zipcode.style.borderBottom="1px solid #DDDDDD";
         flag+=1;
         }
+
+
         if(service.checked==false){
           errorMsg[11].innerHTML="* accept terms and conditions.";
-          // service.style.borderBottom="1px solid #ff0000";
+          service.style.borderBottom="1px solid #ff0000";
         }
         else
         {
           
           errorMsg[11].innerHTML=" ";
-        //  service.style.borderBottom="1px solid #DDDDDD";
+         service.style.borderBottom="1px solid #DDDDDD";
         flag+=1;
         }
         
@@ -258,7 +260,7 @@ let fname=id("fname"),
 
       if(flag==6)
       {
-        location.href='dashboard.html';
+        location.href='login.html';
       }
 
 
