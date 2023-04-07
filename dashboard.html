@@ -32,7 +32,7 @@
                         </div>
                         <div class="side-box-items">
                             <a href="#" class="side-nav-css"> 
-                                <span class="side-nav-icons"><i class="fa-solid fa-school"></i></span> 
+                                <span class="side-nav-icons"><img  style="width: 15px;"src="assets/school.svg" alt=""></span> 
                                 <span>Manage Schools</span>
                             </a> 
                         </div>
@@ -89,7 +89,7 @@
                                     <div class="user-dropdown-items"> <i class="fa-solid fa-user"></i> &nbsp;&nbsp;<a href="">View Profile</a></div>
                                     <div class="user-dropdown-items"> <i class="fa-solid fa-globe"></i>&nbsp;&nbsp;<a href="">Visit Website</a></div>
                                     <div class="user-dropdown-items"> <i class="fa-solid fa-question"></i>&nbsp;&nbsp;<a href="">Help Center</a></div>
-                                    <div class="user-dropdown-items"> <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;<a href="lo">Signout</a></div>
+                                    <div class="user-dropdown-items"> <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;<a href="login.html">Signout</a></div>
 
                                    </div> 
                                 </div>
@@ -142,13 +142,18 @@
                     
                     <div class="large-box">
                         <div class="large-box-1" >
-                            <div class="heading">Rosters | Teachers </div>
+                            <div class="heading-largebox-1"> 
+                                <span ><strong class="lg-sclass" id="Rosters" onclick="rosters()">Rosters</strong> | </span>
+                                <span id="teacher" onclick="teacher()">Teacher</span>
+                            </div>
+
                             <canvas id="barChart"> </canvas>
 
                         </div>
                         <div class="large-box-2">
                              <div class="heading d-flex justify-content-between"> 
-                                <div>Data Usage</div>
+                                <div style="font: normal normal 600 18px/27px Open Sans;
+                                color: #444B48;">Data Usage</div>
                                 <select class="form-select form-select-sm border-none shadow-none" aria-label=".form-select-sm example" style="width: fit-content; font-size: 12px;">
                                     <option selected>School_Name_01</option>
                                     <option value="1">School_Name_02</option>
@@ -175,30 +180,30 @@
                             </thead>
                             <tbody>
                               <tr class="table-data-css">
-                                <th scope="row" ><img class="css-for-img"src="assets\school-img.png" alt=""></th>
+                                <th scope="row" ><img class="css-for-img"src="assets\imgs.jpg" alt=""></th>
                                 <td>Golden International School</td>
-                                <td>Goldeninternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
+                                <td>Goldeninternationalschool@email.com <br>+91 731 858 321, +91 98455 43210</td>
                                 <td>364 / 30</td>
                                 <td> <strong>
-                                    324</strong><span class="table-lightfont-color"> /500mb</span></td>    
+                                    324</strong><span class="table-lightfont-color"> /400mb</span></td>    
                                 <td>Active</td>
                                 <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
                               </tr>
                               <tr class="table-data-css">
-                                <th scope="row" ><img class="css-for-img"src="assets\school-img.png" alt=""></th>
-                                <td>Golden International School</td>
-                                <td>Goldeninternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
-                                <td>364 / 30</td>
-                                <td> <strong> 324 </strong><span class="table-lightfont-color">/500mb</span></td>
+                                <th scope="row" ><img class="css-for-img"src="assets\blossom.jpeg" alt=""></th>
+                                <td>Silver International School</td>
+                                <td>Silverinternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
+                                <td>369 / 40</td>
+                                <td> <strong> 504 </strong><span class="table-lightfont-color">/300mb</span></td>
                                 <td>Active</td>
                                 <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
                               </tr>
                               <tr class="table-data-css">
-                                <th scope="row" ><img class="css-for-img"src="assets\school-img.png" alt=""></th>
-                                <td>Golden International School</td>
-                                <td>Goldeninternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
-                                <td>364 / 30</td>
-                                <td><strong>324 </strong> <span class="table-lightfont-color">/500mb</span> </td>
+                                <th scope="row" ><img class="css-for-img"src="assets\simg.webp" alt=""></th>
+                                <td>Ideal International School</td>
+                                <td>idealinternationalschool@email.com <br>+91 731 988 311, +91 55765 43210</td>
+                                <td>444 / 360</td>
+                                <td><strong>224 </strong> <span class="table-lightfont-color">/250mb</span> </td>
                                 <td>Active</td>
                                 <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
                               </tr>

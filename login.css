@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+
 *{
   margin: 0px;
   padding:0px;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+
 }
 body{
     background: url('assets/Bg.png')  no-repeat ;
     background-size: cover;
-    font-family: sans-serif;
   }
 
   #logo-image{
@@ -75,7 +79,7 @@ body{
 
 .email-img-span{
   width: 15%;
-  padding: 16px;
+  padding: 14px;
 }
 
 
@@ -112,10 +116,11 @@ input{
 .input-main label{
   color: #000000;
   position: absolute;
-  top: 16px;
-  left: 45px;
-  font-size: 15px;
+  top: 14px;
+  left: 44px;
+  /* font-size: 15px;0 */
   pointer-events: none;
+  font: normal normal 600 15px/20px Open Sans;
 }
 
 .input-div:focus{
@@ -180,9 +185,9 @@ input{
 .password-label{
   color: #000000;
   position: absolute;
-  top: 17px;
-  left: 45px;
-  font-size: 15px;
+  top: 14px;
+  left: 44px;
+  font: normal normal 600 15px/20px Open Sans;;
   pointer-events: none;
 }
 
@@ -335,7 +340,7 @@ justify-content: space-between;
 
 
 .bottomtext{
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 12px;
   text-align: center;
 

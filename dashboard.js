@@ -10,12 +10,12 @@ new Chart("barChart", {
     labels: xValues,
     
     datasets: [{
-      label: "Active",
+      // label: "Active",
       backgroundColor: "#F9AC32",
       data: [150, 200, 350, 250],
       barThickness:20
     },{
-        label:"Inactive",
+        // label:"Inactive",
         backgroundColor: "#EEEEEE",
         data: [200, 250, 100, 50],
         barThickness:20
@@ -27,7 +27,7 @@ new Chart("barChart", {
         display: false
       },
       legend: {
-        display: true,
+        display: false,
         position: 'right',
         align: 'start',
         labels: {
@@ -211,6 +211,35 @@ dropdown.addEventListener("click", ()=>{
     }
   
 })
+
+
+
+
+function teacher(){
+  let teacher=document.getElementById("teacher");
+  let rosters=document.getElementById("Rosters");
+  teacher.style.fontWeight="Bold";
+  teacher.style.borderBottom="3px solid #386CB5";
+  teacher.style.paddingBottom="1px";
+  teacher.style.opacity="1";
+  rosters.style.fontWeight="Normal";
+  rosters.style.borderBottom="none";
+  rosters.style.paddingBottom="none";
+  rosters.style.opacity=".4";
+}
+
+function rosters(){
+  let teacher=document.getElementById("teacher");
+  let rosters=document.getElementById("Rosters");
+  rosters.style.fontWeight="Bold";
+  rosters.style.borderBottom="3px solid #386CB5";
+  rosters.style.paddingBottom="1px";
+  rosters.style.opacity="1";
+  teacher.style.fontWeight="Normal";
+  teacher.style.borderBottom="none";
+  teacher.style.paddingBottom="none";
+  teacher.style.opacity=".4";
+}
 
 
 
