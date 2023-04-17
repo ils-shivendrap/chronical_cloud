@@ -13,7 +13,9 @@ new Chart("barChart", {
       // label: "Active",
       backgroundColor: "#F9AC32",
       data: [150, 200, 350, 250],
-      barThickness:20
+      barThickness:20,
+      hoverBackgroundColor:"#5BCDA2"
+
     },{
         // label:"Inactive",
         backgroundColor: "#EEEEEE",
@@ -72,8 +74,6 @@ new Chart("barChart", {
     aspectRatio: 2
   },
 });
-
-
 
 
 const pieChart = document.getElementById('pieChart');
@@ -152,7 +152,13 @@ new Chart("pieChart", {
 });
 
 
+// function side_nav_icon(){
+// let side_nav_icon=document.getElementsByClassName("side-nav-icons");
+// side_nav_icon.style.color="black";
+// side_nav_icon.style.opacity="1";
 
+
+// }
 
 
 

@@ -26,13 +26,13 @@
                     <div>
                         <div class="side-box-items active">
                             <a href="dashboard.html" class="side-nav-css"> 
-                                <span class="side-nav-icons"><i class="fa-solid fa-grip"></i></span> 
+                                <span class="side-nav-icons" ><i class="fa-solid fa-grip"></i></span> 
                                 <span>Dashboard</span>
                             </a>
                         </div>
                         <div class="side-box-items">
                             <a href="#" class="side-nav-css"> 
-                                <span class="side-nav-icons"><img  style="width: 15px;"src="assets/school.svg" alt=""></span> 
+                                <span class="side-nav-icons"><img id="school-img" src="assets/school.svg" alt=""></span> 
                                 <span>Manage Schools</span>
                             </a> 
                         </div>
@@ -97,57 +97,30 @@
                     </div>
                 </div>
                 <div  class="cards-main">
-                    <div class="small-box">
-                        <div class="small-box-1 small-box-css">
-                            <span class="small-box-heading"> SCHOOL COUNT</span>
-                            <div class="small-box-middle">
-                                <span class="small-box-middle-1" >04 <sub class="subclass">Active</sub> </span>
-                                <span class="small-box-middle-2"><img width="20px" src="assets/1.png" alt=""></span>
-                            </div>
-                            <span class="small-box-footor">Total Schools: 12</span>
-                        </div>
-                        
-                        <div class="small-box-2 small-box-css">
-                            <span class="small-box-heading">TEACHER COUNT</span>
-                            <div class="small-box-middle">
-                                <span class="small-box-middle-1" >84 <sub class="subclass">Active</sub> </span>
-                                <span class="small-box-middle-2 " id="bg-color"><img width="18px" src="assets/2.png" alt=""></span>
-                            </div>
-                            <span class="small-box-footor">Total Teachers: 98</span>
-
-                        </div>
-                        
-                        <div class="small-box-3 small-box-css">
-                            <span class="small-box-heading"> ROSTER COUNT</span>
-                            <div class="small-box-middle">
-                                <span class="small-box-middle-1" >1256 <sub class="subclass">Active</sub> </span>
-                                <span class="small-box-middle-2" id="bg-color-2"><img src="assets/3.png" alt=""></span>
-                            </div>
-                            <span class="small-box-footor">Total Roster: 1307</span>
-
-                        </div>
-                        
-                        <div class="small-box-4 small-box-css">
-                            <span class="small-box-heading"> CLASSES COUNT</span>
-                            <div class="small-box-middle">
-                                <span class="small-box-middle-1" >76 <sub class="subclass">Active</sub> </span>
-                                <span class="small-box-middle-2" id="bg-color-3" ><img style="width: 20px;" src="assets/4.png" alt=""></span>
-                            </div>
-                            <span class="small-box-footor">Total Schools: 12</span>
-
-                        </div>
-
+                    <div class="small-box" >
                     </div>
                     
                     
                     <div class="large-box">
                         <div class="large-box-1" >
-                            <div class="heading-largebox-1"> 
-                                <span ><strong class="lg-sclass" id="Rosters" onclick="rosters()">Rosters</strong> | </span>
-                                <span id="teacher" onclick="teacher()">Teacher</span>
-                            </div>
 
-                            <canvas id="barChart"> </canvas>
+                            <div class="large-box-1-head">
+                                <div class="heading-largebox-1"> 
+                                    <span ><strong class="lg-sclass" id="Rosters" onclick="rosters()">Rosters</strong> | </span>
+                                    <span id="teacher" onclick="teacher()">Teacher</span>
+                                </div>
+                                <div class="legend-head">
+                                    <div  class="legend-innerdiv" id="legend-active">
+                                        <div class="legend-box-1" id="bar-active"></div>
+                                        <div class="bar-active-inactive-text">&nbsp Active</div>
+                                    </div>
+                                    <div  class="legend-innerdiv" id="legend-inactive" >
+                                        <div class="legend-box-1" id="bar-inactive"></div>
+                                        <div class="bar-active-inactive-text">&nbsp Inactive</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <canvas id="barChart"> </canvas>
 
                         </div>
                         <div class="large-box-2">
@@ -179,34 +152,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr class="table-data-css">
-                                <th scope="row" ><img class="css-for-img"src="assets\imgs.jpg" alt=""></th>
-                                <td>Golden International School</td>
-                                <td>Goldeninternationalschool@email.com <br>+91 731 858 321, +91 98455 43210</td>
-                                <td>364 / 30</td>
-                                <td> <strong>
-                                    324</strong><span class="table-lightfont-color"> /400mb</span></td>    
-                                <td>Active</td>
-                                <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
-                              </tr>
-                              <tr class="table-data-css">
-                                <th scope="row" ><img class="css-for-img"src="assets\blossom.jpeg" alt=""></th>
-                                <td>Silver International School</td>
-                                <td>Silverinternationalschool@email.com <br>+91 731 987 321, +91 98765 43210</td>
-                                <td>369 / 40</td>
-                                <td> <strong> 504 </strong><span class="table-lightfont-color">/300mb</span></td>
-                                <td>Active</td>
-                                <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
-                              </tr>
-                              <tr class="table-data-css">
-                                <th scope="row" ><img class="css-for-img"src="assets\simg.webp" alt=""></th>
-                                <td>Ideal International School</td>
-                                <td>idealinternationalschool@email.com <br>+91 731 988 311, +91 55765 43210</td>
-                                <td>444 / 360</td>
-                                <td><strong>224 </strong> <span class="table-lightfont-color">/250mb</span> </td>
-                                <td>Active</td>
-                                <td class="view-color"><i class="fa-solid fa-eye"></i> view</td>
-                              </tr>
+                            
             
                             </tbody>    
                         </table>
@@ -229,5 +175,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
     <script src="dashboard.js"></script>
+    <script type="module" src="load.js"></script>
 </body>
 </html>

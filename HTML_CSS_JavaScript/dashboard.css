@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -76,7 +77,7 @@ body{
     display: flex;
     width: 100%;
     text-decoration: none;
-    font: normal normal normal 13px/22px Open Sans;
+    font: normal normal normal 15px/22px Open Sans;
     letter-spacing: 0px;
     color: #171725;
     opacity: 1;
@@ -88,6 +89,7 @@ body{
     display: inline-block;
     padding: 0 10px 0 0;
     margin-left: 20px;
+    color: #7E84A3;
 
 }
 
@@ -101,19 +103,31 @@ body{
 }
 
 .side-nav-css:hover{
-    font: normal normal bold 13px/22px Open Sans;
+    font: normal normal bold 15px/22px Open Sans;
     
 }
 
 .active{
     background-color: #F2F7FF;
-    font: normal normal 600 13px/22px Open Sans;
+    font: normal normal 600 15px/22px Open Sans;
     border-left: 3px solid #386CB5;
+    color: #000000;
+
+}
+
+.active i{
+    color: #000000;
+
+}
+
+.active #school-img{
+    opacity: 1;
 }
 
 .active .side-nav-css span:nth-child(2){
     color: #386CB5;
-    font: normal normal 600 13px/22px Open Sans;
+    font: normal normal 600 15px/22px Open Sans;
+
 }
 
 /* .side-nav-css.active::before{
@@ -123,7 +137,10 @@ body{
     width: 5px;
 } */
 
-
+#school-img{
+    width: 15px;
+    opacity: .5;
+}
 .main-content{
     grid-column: 2;
     grid-area: mainContent;
@@ -232,7 +249,7 @@ body{
     border-radius: 5px;
     display: none;
     position: absolute;
-    top:45px;
+    top:31px;
 
 }
 
@@ -253,7 +270,7 @@ body{
 
 
 .cards-main{
-    padding:0px 20px 20px 15px;
+    padding:7px 20px 20px 15px;
 } 
 
 
@@ -274,7 +291,7 @@ body{
     border-radius: 10px;
     opacity: 1;
     /* height: 160px; */
-    padding: 20px;
+    padding: 10px 15px;
 }
 
 
@@ -343,7 +360,6 @@ body{
     gap: 30px;
     margin-top: 25px;
     width: 93%;
-    
 }
 
 
@@ -351,6 +367,49 @@ body{
     font: normal normal 600 16px/20px Open Sans;
     color: #444B48;
     
+}
+
+.large-box-1-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.legend-head{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 3px 0px;
+}
+.legend-innerdiv{
+    margin-bottom: 3px;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    font: normal normal normal 12px/22px Open Sans;
+    color: #444B48;
+}
+.legend-box-1{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+#bar-active{
+    background-color: #F9AC32;
+}
+#bar-inactive{
+    background-color: #EEEEEE;
+}
+#legend-inactive{
+    margin-top: 2px;
+}
+.legend-div{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+
+#teacher{
+    opacity: .4;
 }
 
 .large-box-1{
@@ -376,7 +435,7 @@ body{
 
 
 #barChart{
-    padding-top: 5px;
+    padding: 15px;
 }
 
 .table-div{
